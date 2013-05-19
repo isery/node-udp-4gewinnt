@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="vendor/jquery-1.8.3.min.js"></script>
+    <script src="vendor/jquery-ui-1.9.2.min.js"></script>
+
+    <script type="text/JavaScript" src="./node_modules/socket.io-client/dist/socket.io.js"></script>
+</head>
+<body>
+
+<div id="intro" class="intro active">
+    <div class="overlay1"></div>
+    <div class=content>
+        <h2>Vier Gewinnt!</h2>
+
+        <p>Fachhochschule Salzburg - MMT-B2011<br>Eschbacher Georg + Hettegger Michael</p>
+        <input id="playerNameInput" type="text" name="playerName" placeholder="Enter Playername"/>
+        <a class="btn-player" href="#">weiter</a>
+    </div>
+</div>
+
+<div id="showList" class="showList active">
+    <div class=overlay2></div>
+    <div class=content>
+        <div class="row-fluid">
+            <div id="spanText1" class=span4>Liste aller Spieler</div>
+            <div class=span4>
+                <div id=searchGame>Ich will spielen!</div>
+            </div>
+            <div id="spanText2" class=span4>Herausforderungen</div>
+
+        </div>
+
+        <div class="row-fluid">
+            <div class=span4>
+                <div id=list>
+                    <div id=listGames></div>
+                </div>
+            </div>
+            <div class=span4></div>
+
+            <div class=span4>
+                <div id="enemyPlayer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class=vierGewinnt></div>
+
+<input id="hiddenInputDx" type="hidden"/>
+<input id="hiddenInputTurn" type="hidden"/>
+<input id="hiddenInputWinner" type="hidden"/>
+
+
+<script src="js/lib.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
